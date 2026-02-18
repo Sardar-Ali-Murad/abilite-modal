@@ -607,7 +607,7 @@
         </div>
 
         ${canMgmtEdit ? `<div class="text-end mt-3">
-          <button class="btn btn-primary btn-sm ${submitDisabled}" data-act="fu-submit" data-obs="${obs.id}" data-pair="${pair.id}"><i class="fa fa-paper-plane me-1"></i>Submit</button>
+          <button class="btn btn-primary btn-sm" data-act="fu-submit" data-obs="${obs.id}" data-pair="${pair.id}"><i class="fa fa-paper-plane me-1"></i>Submit</button>
         </div>`: ""}
 
         ${canAuditDecision ? `<div class="text-end mt-3 d-flex justify-content-end gap-2">
