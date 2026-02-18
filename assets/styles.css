@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html, body { height: 100%; font-family: "Poppins", sans-serif !important; }
+body { margin: 0; overflow-x: hidden; background: #f6f7fb; }
+
+:root{
+  --card: #fff;
+  --muted: #6c757d;
+  --border: rgba(0,0,0,.08);
+  --shadow: 0 10px 28px rgba(15, 23, 42, .08);
+  --radius: 14px;
+}
+
+.topbar{ position:sticky; top:0; z-index:999; background:rgba(255,255,255,.92); backdrop-filter: blur(8px); border-bottom:1px solid var(--border); }
+.page-wrap{ max-width: 1280px; margin:0 auto; padding:0 16px; }
+
+.brand-badge{ display:flex; align-items:center; gap:10px; font-weight:800; }
+.brand-badge i{ color:#0d6efd; }
+.badge-step{ border:1px solid var(--border); background:#f3f6ff; color:#0d6efd; font-weight:700; }
+
+.role-pill{ background:#111827; color:#fff; border-radius:999px; padding:6px 10px; font-weight:700; font-size:12px; }
+
+.app-shell{ display:flex; min-height:calc(100vh - 52px); }
+.app-sidebar{ width:270px; background:#0b1220; color:#e5e7eb; padding:16px; border-right:1px solid rgba(255,255,255,.06); }
+.app-main{ flex:1; }
+
+.sidebar-mock a{ display:block; padding:10px; border-radius:10px; color:#e5e7eb; text-decoration:none; margin-bottom:4px; }
+.sidebar-mock a:hover{ background:rgba(255,255,255,.08); }
+.sidebar-mock a.active{ background:rgba(13,110,253,.22); border:1px solid rgba(13,110,253,.28); }
+.group-title{ font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:#94a3b8; margin:10px 0 6px; }
+
+.help-note{ font-size:12px; color:var(--muted); line-height:1.35; }
+
+.card-like{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); }
+.heading{ font-size:20px; font-weight:900; }
+.sub-heading{ font-size:16px; font-weight:800; }
+
+.chip{ display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#fff; font-size:12px; margin-right:6px; margin-bottom:6px; }
+
+.accordion-button{ font-weight:800; }
+.accordion-button:not(.collapsed){ background:#f3f6ff; color:#0d6efd; }
+.accordion-item{ border:1px solid var(--border); border-radius:12px !important; overflow:hidden; margin-bottom:10px; }
+.accordion-body{ background:#fff; }
+
+.rec-card{ border:1px solid var(--border); border-radius:14px; padding:12px; background:#fff; }
+.rec-header{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.rec-title{ font-weight:900; }
+.divider-soft{ border-top:1px dashed var(--border); margin:14px 0; }
+
+.badge-status{ border:1px solid var(--border); background:#f8fafc; color:#111827; font-weight:800; }
+.badge-approved{ background:#dcfce7; color:#166534; border-color:#bbf7d0;}
+.badge-submitted{ background:#fef9c3; color:#854d0e; border-color:#fde68a;}
+.badge-feedback{ background:#fee2e2; color:#991b1b; border-color:#fecaca;}
+.badge-draft{ background:#e5e7eb; color:#111827; border-color:#d1d5db;}
+
+.feedback-box{ border:1px solid rgba(239,68,68,.25); background:rgba(239,68,68,.06); border-radius:12px; padding:10px; font-size:12px; color:#991b1b; }
+
+@media (max-width: 992px){ .app-sidebar{ display:none; } .page-wrap{ padding:0 10px; } }
